@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* .title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.title span{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: orange;
+} */
+
+a{
+    text-decoration: none;
+}
+/* ul{
+    list-style: none;
+} */
+.btn{
+    padding: .8rem 2.5em;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    background-color: #3596e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}  
+/* .message  */
+
+
+.btn:hover{
+    opacity: .7;
+    background: black;
+}
+input,
+button,
+textarea{
+    outline: none;
+    border: 1px solid #ba4848;
+    background: transparent;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+button{
+    cursor:pointer;
+}
+
+button[type=submit]{
+    cursor: pointer;
+}
+/* form container */
+.form-container{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    min-height:100vh;
+    padding: 4rem 0;
+    position: relative;
+    
+}
+.form-container::before{
+    content: "";
+    position: absolute;
+    /* background: yellow; */
+    top: -5%;
+    left: -15%;
+    right: -15%;
+    width: 255px;
+    height: 650px;
+    background-size: 255;
+    z-index: 100;
+}
+.form-container::after{
+    content: "";
+    position: absolute;
+    background:rgba(0, 128, 0, 0);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    opacity: .7;
+    z-index: 1;
+}
+.form-container h1{
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+}
+.message{
+    text-align:center;
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 40%;
+    padding: .5rem 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+}
+.message i{
+    cursor: pointer;
+}
+.form-container form{
+    width: 40%;
+    margin: 1rem auto;
+    background: rgb(150, 210, 255);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    position: relative;
+    border-radius: 30px;
+
+}
+.form-container form label{
+    text-transform: uppercase;
+    margin-left: 3rem;
+    
+    
+}
+.form-container form input{
+    display: block;
+    width: 90%;
+    margin: .5rem auto; 
+    max-width: 500px;
+}
+.form-container form p{
+    display: block;
+    width: 90%;
+    margin: .5rem auto;
+    max-width: 500px;
+}
+.form-container form label{
+    display: block;
+    width: 90%;
+    margin: .5rem auto;
+    max-width: 500px;
+}
+
+
+.form-container form button{
+    width: 100%;
+    background-color: #010101;
+    border-radius: none;
+}
