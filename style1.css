@@ -61,17 +61,17 @@ button[type=submit]{
 }
 /* form container */
 .form-container{
-    background: rgb(255, 255, 255);
+    background: wheat;
     width: 100%;
     min-height:100vh;
     padding: 4rem 0;
     position: relative;
     
 }
-.form-container::before{
+/* .form-container::before{
     content: "";
     position: absolute;
-    /* background: yellow; */
+     background: yellow;
     top: -5%;
     left: -15%;
     right: -15%;
@@ -79,7 +79,7 @@ button[type=submit]{
     height: 650px;
     background-size: 255;
     z-index: 100;
-}
+} 
 .form-container::after{
     content: "";
     position: absolute;
@@ -90,7 +90,7 @@ button[type=submit]{
     height: 30%;
     opacity: .7;
     z-index: 1;
-}
+}*/
 .form-container h1{
     font-family: "Raleway", sans-serif;
     text-align: center;
@@ -99,7 +99,8 @@ button[type=submit]{
     margin: 2rem 0;
     text-transform: uppercase;
 }
-.message{
+.message,
+.error{
     text-align:center;
     text-transform: capitalize;
     margin: 0 auto;
@@ -109,18 +110,24 @@ button[type=submit]{
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgba(255, 0, 0, 0.761);
     color: #fff;
 }
-.message i{
+.message i,
+.error{
     cursor: pointer;
 }
+
+
+
+
 .form-container form{
-    width: 40%;
+    width: 30%;
     margin: 1rem auto;
     background: rgb(150, 210, 255);
     box-shadow: var(--box-shadow);
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     position: relative;
     border-radius: 30px;
 
@@ -143,12 +150,7 @@ button[type=submit]{
     margin: .5rem auto;
     max-width: 500px;
 }
-.form-container form label{
-    display: block;
-    width: 90%;
-    margin: .5rem auto;
-    max-width: 500px;
-}
+
 
 
 .form-container form button{
@@ -156,3 +158,6 @@ button[type=submit]{
     background-color: #010101;
     border-radius: none;
 }
+
+
+/* ------------admin_pannel_header------------- */
