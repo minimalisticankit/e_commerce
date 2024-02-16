@@ -6,22 +6,22 @@
     
 }
 
-/* .title{
+.title{
     text-align: center;
     margin-bottom: 1rem;
 }
 .title span{
     font-weight: bold;
     text-transform: uppercase;
-    color: orange;
-} */
+    color: rgb(255, 255, 255);
+}
 
 a{
     text-decoration: none;
 }
-/* ul{
+ul{
     list-style: none;
-} */
+}
 .btn{
     padding: .8rem 2.5em;
     text-transform: uppercase;
@@ -29,7 +29,7 @@ a{
     font-size: 14px;
     line-height: 28px;
     color: #fff;
-    background-color: #3596e0;
+    background-color: #000000;
     border-radius: 10px;
     cursor: pointer;
     transition: all .3s ease;
@@ -39,17 +39,18 @@ a{
 
 .btn:hover{
     opacity: .7;
-    background: black;
+    color: #000;
+    background: rgb(255, 255, 255);
 }
 input,
 button,
 textarea{
     outline: none;
-    border: 1px solid #ba4848;
+    border: 1px solid #000000;
     background: transparent;
     width: 100%;
     padding: 1rem 1.5rem;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 1rem 0;
 }
 button{
@@ -61,17 +62,17 @@ button[type=submit]{
 }
 /* form container */
 .form-container{
-    background: wheat;
+    background: rgb(255, 255, 255);
     width: 100%;
     min-height:100vh;
     padding: 4rem 0;
     position: relative;
     
 }
-/* .form-container::before{
+.form-container::before{
     content: "";
     position: absolute;
-     background: yellow;
+     background: rgb(255, 255, 255);
     top: -5%;
     left: -15%;
     right: -15%;
@@ -90,7 +91,7 @@ button[type=submit]{
     height: 30%;
     opacity: .7;
     z-index: 1;
-}*/
+}
 .form-container h1{
     font-family: "Raleway", sans-serif;
     text-align: center;
@@ -124,8 +125,8 @@ button[type=submit]{
 .form-container form{
     width: 30%;
     margin: 1rem auto;
-    background: rgb(150, 210, 255);
-    box-shadow: var(--box-shadow);
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.51) 0px 4px 16px 0px;
     padding-top: 1rem;
     padding-bottom: 2rem;
     position: relative;
@@ -134,9 +135,7 @@ button[type=submit]{
 }
 .form-container form label{
     text-transform: uppercase;
-    margin-left: 3rem;
-    
-    
+    margin-left: 3rem;  
 }
 .form-container form input{
     display: block;
@@ -161,3 +160,221 @@ button[type=submit]{
 
 
 /* ------------admin_pannel_header------------- */
+.header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.header .logo span {
+    font-size: 1.5rem; 
+    color: #000; 
+    font-weight: bold; 
+}
+
+.banner {
+    height: 40vh;
+    width: 100%;
+    position: relative; /* Add relative positioning */
+    z-index: 0;
+}
+ .banner::before{
+    position: absolute;
+    content: '';
+    bottom: -18%;
+    right: 0;
+    background-image: '';
+    width: '';
+    height: '';
+    background-size: '';
+    background-repeat: no-repear;
+} 
+
+.banner .detail {
+    position: relative; /* Use relative positioning */
+    padding: 7rem 0;
+    text-align: center;
+    z-index: 1; /* Ensure content appears on top */
+}
+.banner .detail h1{
+    font-size: 5rem;
+    color:#000000;
+    text-transform: capitalize;
+}
+.banner  .detail p{
+    font-size: 18px;
+    line-height: 2;
+}
+.banner .detail a{
+    text-transform: uppercase;
+    color: #000;
+}
+.banner .detail span{
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101; /* Ensure header is on top */
+    background: rgb(255, 255, 255); /* Example background color */
+    /* Other styles for header */
+}
+header.scrolled{
+    box-shadow: 0 5px 20px 0.1px  rgba(64, 196, 196,.3);
+    backdrop-filter: blur(20pox);
+}
+header.scrolled a:hover{
+    color:#48ba57;
+}
+.flex{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+.navbar a{
+    margin: 0 1rem;
+    font-size: 1rem;
+    color:#000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*----------- icones --------------*/
+.navbar a:hover,
+header .icons i:hover{
+    color: #000000a5;
+    text-decoration: none;
+}
+.header .icons{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+.header .icone i {
+    height: 30px;
+    
+}
+menu-btn{
+    display: none;
+}
+/*user box*/
+.header .user-box{
+    position: absolute;
+    top: 120%;
+    right:0rem;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    width: 20rem;
+    transform: scale(0);
+    transform-origin: top right;
+    line-height: 2;
+}
+.logout-btn{
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    width: 10rem;
+    border-radius: 4px;
+}
+.header .user-box.active{
+    transform: scale(1.0);
+    transition: .2s linear;
+}
+
+/* amdin dashboard */
+.dashboard {
+    background: #fff;
+    padding: 3rem;
+    
+    position: relative;
+}
+
+.dashboard::before{
+    position: absolute;
+    content: '';
+    bottom: -25%;
+    right: -10px;
+    background-image: '';
+    width: '';
+    height: '';
+    background-size: '';
+    background-repeat: no-repear;
+}
+
+.box-container {
+    padding: 2% 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    column-gap: 5rem;
+}
+
+.box-container .box {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, .06) 0px 4px 16px 0px;
+    padding: 2rem;
+    margin-top: 3.5rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.dashboard .box h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.dashboard .box p {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: .5rem 0;
+}
+
+/*----------- admin products--------------*/
+.add-products{
+    margin-top:-3.5rem;
+    height:auto;
+    background: #FFF;
+    position: relative;
+}
+
+/*----------- media screen--------------*/
+@media (max-width:991px){
+    #menu-btn{
+        display: block;
+    }
+    .header .flex .navbar{
+        position: absolute;
+        top: 149%;
+        left: 0;
+        display: block;
+        right: 0;
+        border-top: 1px solid *000;
+        background: #fff;
+        transition: .3s ease;
+        clip-path:  polygon(0% 0%, 100% 0, 100% 0, 0 0);
+        
+    }
+    .header .flex .navbar.active{
+        clip-path:  polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+    }
+    .header  .flex .navbar a{
+        display: block;
+        margin: 2rem;
+    }
+    .banner .detail{
+        left: 10%;
+    }
+}
+

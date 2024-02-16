@@ -42,9 +42,18 @@ if (isset($_POST['submit-btn'])) {
     ?>  
         <form method="post">
             <h1>register now</h1>
-            <input type="text" name="name" placeholder="Enter your Name" required>
-            <input type="email" name="email" placeholder="Enter you Email" required>
-            <input type="password" name="password" placeholder="Enter Password" required>
+            <div class="input-field">
+                <label>enter Your name</label><br>
+                <input type="text" name="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="input-field">
+                <label>enter your email</label><br>
+                <input type="email" name="email" placeholder="Enter you Email" required>
+            </div>
+            <div class="input-field">
+                <label>Your password</label><br>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                </div>
             <input type="submit" name="submit-btn" value="register now" class="btn">
             <p>already have a account? <a href="login.php">Login now</a></p> 
 </form>
